@@ -1,0 +1,118 @@
+*{
+  box-sizing: border-box;
+}
+html{
+  font-size: 100%;
+}
+body{
+  background-image: url("http://localhost:8888/cours-laravel/Wolfgang/public/uploads/bg_body.svg");
+  background-color: #444444;
+  margin: 0;
+  line-height: 1.5;
+  font-family: 'Lato', sans-serif;
+  color: black;
+}
+img, video{
+  max-width: 100%;
+  width: 100%;
+}
+h1, h2, h3,
+h4, h5, h6,
+nav a{
+  font-family: arial, sans-serif;
+  text-transform: uppercase;
+  color:white;
+}
+p,h3,h4,h5{
+    color:black;
+}
+
+ul {
+    padding-left: 0;
+}
+
+ul li {
+    list-style: none;
+}
+.error{
+    color:red;
+    font-weight: bold;
+    font-style: italic;
+}
+/*------------- slide --------*/
+.intro{
+    margin-bottom: 100px;
+}
+.intro h1{
+    text-align: center;
+    padding: 20px;
+}
+.intro img{
+    border: 5px solid white;
+}
+.div-slide {
+    margin: 20px 0;
+    position: relative;
+}
+span{
+    color: #ff9d00;
+}
+.div-slide ul li img {
+    width: 100%;
+    height: 350px;
+    border-radius: 5px;
+}
+
+.div-rigth,
+.div-left {
+    position: absolute;
+    top: 45%;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 5px 12px;
+    border-radius: 50px;
+}
+
+.div-rigth:hover,
+.div-left:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+.div-rigth {
+    left: 20px;
+}
+
+.div-left {
+    right: 20px;
+}
+/*--------footer ----------*/
+.footer-main{
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.5);
+    width:90%;
+    margin: 0 auto;
+}
+.footer-main nav a{
+    color: white;
+    margin-right: 30px;
+}
+.footer-main p{
+    color:white;
+}
+.footer-main h3{
+    color:white;
+}
+@media screen and (min-width: 900px)  {
+    .div-slide {
+        margin: 20px auto;
+        width:80%;
+    }
+    .div-slide ul li img {
+        height: 400px;
+    }
+    footer.footer-main{
+        width: 100%;
+        max-width: 100%;
+    }
+}
